@@ -52,17 +52,15 @@ You can setup `EAIntroView` using [Swift Package Manager](#swift-package-manager
 
 ### Swift Package Manager
 
-> This fork (`tvbstw/EAIntroView`) adds SPM support without changing the original source layout.
-
 Add the package in Xcode (File > Add Package Dependencies...) or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/tvbstw/EAIntroView.git", from: "2.13.1")
+.package(url: "https://github.com/ealeksandrov/EAIntroView.git", from: "2.13.1")
 ```
 
 Then add the `EAIntroView` product to your target and `import EAIntroView`.
 
-`EARestrictedScrollView` 1.1.0 (Objective-C, MIT) is vendored under `Vendor/` as an internal target, because upstream 2.x is a Swift rewrite that Objective-C code cannot use. No extra dependency is needed.
+`EARestrictedScrollView` 1.1.0 (Objective-C, MIT) is vendored under `Vendor/` as an internal target, because EARestrictedScrollView 2.x is a Swift rewrite whose API is not exposed to Objective-C. No extra dependency is needed.
 
 ### Carthage
 
